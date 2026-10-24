@@ -1,0 +1,515 @@
+/* Nebula palette: portal green lives alongside violet, cyan and coral. */
+.space-app {
+  --cyan: #71e8ff;
+  --violet: #ba93ff;
+  --coral: #ffad92;
+  --muted: #b5bddf;
+  --line: #c4baff35;
+  --panel: #49386e55;
+  color: #f7f6ff;
+  background:
+    radial-gradient(ellipse at 94% 3%, #8650d58c, transparent 32%),
+    radial-gradient(ellipse at 0% 23%, #15779b85, transparent 33%),
+    radial-gradient(ellipse at 100% 48%, #7444b977, transparent 35%),
+    radial-gradient(ellipse at 14% 78%, #d26b8754, transparent 32%),
+    linear-gradient(155deg, #25153e 0%, #152c4b 40%, #34204d 72%, #222348 100%);
+}
+.space-app ::selection {
+  background: #a794ff;
+  color: #18132e;
+}
+.space-app :focus-visible {
+  outline-color: var(--cyan);
+}
+.starfield {
+  opacity: 0.65;
+  background-image:
+    radial-gradient(1.3px 1.3px at 15% 15%, #ffffffe8 98%, transparent),
+    radial-gradient(1.2px 1.2px at 65% 75%, #a9eaffbb 98%, transparent),
+    radial-gradient(1px 1px at 45% 45%, #ffc5f1aa 98%, transparent),
+    radial-gradient(1.7px 1.7px at 85% 20%, #b9ff85cc 98%, transparent);
+}
+.nebula {
+  opacity: 0.4;
+  filter: blur(100px);
+}
+.nebula-one {
+  background: #aa61ff;
+  right: -120px;
+  top: 170px;
+}
+.nebula-two {
+  background: #28cfe6;
+  left: -290px;
+  top: 900px;
+}
+.scroll-progress {
+  background: linear-gradient(90deg, #83efc5, #70e6ff, #bf8bff, #ffb19e);
+  box-shadow: 0 0 18px #a594ff99;
+}
+.space-nav {
+  border-bottom-color: #cfbfff30;
+  background: linear-gradient(95deg, #7388e90c, #d79cff0c);
+}
+.space-brand small {
+  color: #c5bddf;
+}
+.brand-portal {
+  background: radial-gradient(circle, #b3ff6338, #739ef129);
+  box-shadow:
+    0 0 26px #9aeff238,
+    inset 0 0 14px #b5ff7038;
+}
+.space-links {
+  color: #d0ccea;
+}
+.space-links a[aria-current="page"]:not(.nav-search) {
+  color: #b9f6ff;
+}
+.space-links a[aria-current="page"]:not(.nav-search):after {
+  background: var(--cyan);
+  box-shadow: 0 0 12px #71e8ff;
+}
+.space-links .nav-search {
+  border-color: #d7ceff42;
+  background: #c7b8ff10;
+}
+.space-links .nav-search svg {
+  color: var(--cyan);
+}
+.transmission {
+  color: #d2c8f0;
+}
+.transmission > span {
+  background: var(--coral);
+  box-shadow: 0 0 12px #ffad92;
+}
+.hero-copy h1 {
+  color: #f5f2ff;
+  text-shadow: 0 10px 45px #1b113c20;
+}
+.hero-copy h1 em {
+  color: #96eaff;
+  background: linear-gradient(
+    100deg,
+    #ffbd8d 0%,
+    #f397d6 42%,
+    #97a9ff 70%,
+    #75eaff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+.hero-copy > p {
+  color: #c5c5e3;
+}
+.space-app .primary-portal {
+  background: linear-gradient(105deg, #b8ff59, #8aef8e 68%, #6ee3d7);
+  box-shadow: 0 7px 30px #7affb12b;
+}
+.space-app .primary-portal:hover {
+  box-shadow: 0 10px 40px #76ffd64f;
+}
+.space-app .glass-button {
+  background: linear-gradient(120deg, #c0a4ff23, #80d6ff0f);
+  border-color: #d6caff50;
+  color: #f0eaff;
+}
+.hero-stats > div {
+  border-right-color: #ceb6ff3b;
+}
+.hero-stats > div:nth-child(1) strong {
+  color: #c9ff87;
+}
+.hero-stats > div:nth-child(2) strong {
+  color: var(--cyan);
+}
+.hero-stats > div:nth-child(3) strong {
+  color: #f8b7e5;
+}
+.hero-stats small {
+  color: #b8b8d8;
+}
+.scroll-cue {
+  color: #b7b4d7;
+}
+.scroll-cue > span {
+  border-color: #cfbaff5c;
+  background: #ae8de51a;
+  color: var(--cyan);
+}
+.portal-noise {
+  box-shadow:
+    0 0 60px #a2f74c3b,
+    0 0 140px #8c7dff6b,
+    inset 0 0 30px #b1ff7c80;
+  background: radial-gradient(circle, #3b5b62, transparent 75%);
+}
+.portal-portrait img {
+  filter: saturate(1.05) contrast(1.02);
+}
+.portrait-shade {
+  background: linear-gradient(0deg, #33244c55, transparent 55%);
+}
+.orbit {
+  border-color: #b3bcff42;
+}
+.orbit-outer:after {
+  background: var(--cyan);
+  box-shadow: 0 0 14px var(--cyan);
+}
+.coordinate {
+  color: #c0b4e2;
+}
+.coordinate i {
+  color: #b7f7aa;
+}
+.portal-orbit-label {
+  color: #d2bdf1;
+}
+.glass {
+  border-color: #d2c7ff3e;
+  background: linear-gradient(125deg, #b5a9ff21, #a4e9ff0b);
+  backdrop-filter: blur(28px) saturate(1.35);
+  box-shadow:
+    inset 0 1px 0 #ffffff15,
+    0 16px 55px #12102c22;
+}
+.floating-exp {
+  background: linear-gradient(110deg, #564785b8, #263d70b8);
+  border-color: #b8c6ff70;
+  box-shadow:
+    0 12px 50px #17132d55,
+    inset 0 1px 0 #efe4ff22;
+}
+.tiny-label {
+  color: #ffcfb5;
+}
+.featured-species {
+  color: #d2cceb;
+}
+.featured-open {
+  border-color: #9be8ff75;
+  color: var(--cyan);
+  background: #a2b8ff0d;
+}
+.space-app .icon-button {
+  border-color: #c9baff48;
+  background: linear-gradient(135deg, #b49aff20, #6cbfff13);
+  color: #e8ddff;
+}
+.space-app .icon-button:hover {
+  background: #b3b1ff38;
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+.carousel-dots button {
+  background: #d5b9ff55;
+}
+.carousel-dots button.active {
+  background: var(--coral);
+  box-shadow: 0 0 14px #ffad9270;
+}
+.universe-strip {
+  border-color: #c6b9ff30;
+  background: linear-gradient(90deg, #9d6ce31a, #73daef12, #e6a5c712);
+  color: #cac4e5;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+}
+.universe-strip svg {
+  color: #b8f3ff;
+}
+.space-app .eyebrow {
+  color: #b7ddff;
+}
+.section-heading h2 > span {
+  color: var(--coral);
+}
+.section-heading p {
+  color: #bbb7da;
+}
+.photo-slide {
+  border-color: #dbcaff4a;
+  box-shadow: 0 12px 30px #17172c33;
+}
+.photo-slide img,
+.space-app .art img {
+  filter: saturate(1.05);
+}
+.photo-slide:hover {
+  border-color: #80e8ff;
+}
+.photo-overlay {
+  background: linear-gradient(0deg, #25204df5, #3c2b5966 30%, transparent 80%);
+}
+.photo-overlay small {
+  color: #c8f3ff;
+}
+.photo-overlay > span {
+  color: #ddd2ee;
+}
+.photo-overlay svg {
+  color: #ffcfaa;
+}
+.slide-index {
+  background: #33335c88;
+  border-color: #f5e3ff50;
+}
+.text-link {
+  color: var(--cyan);
+}
+.catalog-toolbar {
+  background: linear-gradient(110deg, #bcabff24, #91d6ff15, #ffc2d518);
+  border-color: #d0c2ff45;
+}
+.chip {
+  color: #c6c0e0;
+}
+.chip.active {
+  color: #e9f9ff;
+  background: linear-gradient(115deg, #78a8ff40, #b98df138);
+  border-color: #b9bcff66;
+}
+.chip:nth-child(2).active {
+  background: #7bcaff28;
+  color: #c6f4ff;
+  border-color: #8fdcff66;
+}
+.chip:nth-child(3).active {
+  background: #d89aff2e;
+  color: #f4c9ff;
+  border-color: #dcafff66;
+}
+.chip:nth-child(4).active {
+  background: #ffa8bb28;
+  color: #ffd0e0;
+  border-color: #ffadc666;
+}
+.chip > span {
+  background: #b8b3ff29;
+}
+.quick-search {
+  background: #30265566;
+  border-color: #dfcbff3d;
+  color: #c5b6f7;
+}
+.quick-search input {
+  color: #f3edff;
+}
+.quick-search:focus-within {
+  border-color: #90e5ff;
+}
+.quick-search input::placeholder {
+  color: #b6acd1;
+}
+.clear-search {
+  color: #d4c6ee;
+}
+.collection-meta {
+  color: #b9acd3;
+}
+.space-app .character-card {
+  border-color: #ceb8ff38;
+  background: linear-gradient(145deg, #a78bdf28, #6b7cc21c);
+  box-shadow:
+    inset 0 1px 0 #ffffff16,
+    0 10px 30px #11132818;
+}
+.space-app .character-card:nth-child(4n + 2) {
+  background: linear-gradient(145deg, #6bbae52e, #7296d51c);
+  border-color: #9bd8ff38;
+}
+.space-app .character-card:nth-child(4n + 3) {
+  background: linear-gradient(145deg, #c785d72b, #9862d224);
+  border-color: #f4b6ff38;
+}
+.space-app .character-card:nth-child(4n + 4) {
+  background: linear-gradient(145deg, #e3ad9229, #a58beb24);
+  border-color: #ffcfad38;
+}
+.space-app .character-card:hover {
+  border-color: #a9d8ff91;
+  box-shadow:
+    0 15px 45px #1a173e55,
+    0 0 28px #8bdfff13;
+}
+.space-app .art {
+  background: #3d355f;
+}
+.space-app .art:after {
+  background: linear-gradient(0deg, #37315b40, transparent 55%);
+}
+.space-app .number,
+.space-app .favorite-button {
+  background: #3a315e9c;
+  border-color: #ebdfff48;
+}
+.space-app .favorite-button.is-saved,
+.space-app .favorite-button:hover {
+  color: #ffb8d6;
+  background: #735583db;
+}
+.space-app .status {
+  color: #d8e9cf;
+}
+.status > span {
+  color: #c0b5d6;
+}
+.status-dead > i {
+  background: #ffab9c;
+  box-shadow: 0 0 8px #ffab9c55;
+}
+.status-unknown > i {
+  background: #ceabff;
+}
+.space-app .character-card p {
+  color: #bfb8d7;
+}
+.card-link {
+  border-color: #d2bfff22;
+  color: #d3c1e7;
+}
+.card-link svg {
+  color: #8de9ff;
+}
+.catalog-end p {
+  color: #bdb2d8;
+}
+.portal-invitation {
+  background:
+    radial-gradient(ellipse at 0% 50%, #bb74f24a, transparent 65%),
+    linear-gradient(120deg, #898ae92e, #e6a5c71a);
+  border-color: #d2b9ff50;
+}
+.portal-invitation h2 {
+  color: #ffe5f6;
+}
+.portal-invitation p {
+  color: #c4b7df;
+}
+.portal-invitation > .icon-button {
+  background: linear-gradient(130deg, #bfff73, #8df3dc);
+  color: #1a2e38;
+}
+.mini-portal {
+  background: radial-gradient(circle, #62e4d747, #b89cff18);
+  border-color: #a4f1f780;
+  color: #b2f7ff;
+  box-shadow:
+    0 0 28px #92c9ff25,
+    inset 0 0 25px #c6acff30;
+}
+.render-note {
+  color: #ae9acb;
+}
+.space-footer {
+  border-color: #d0b8ef35;
+  color: #c3b4d8;
+}
+.footer-title {
+  color: #ecdeff;
+}
+.to-top svg {
+  color: #a8e8ff;
+}
+.footer-bottom {
+  border-color: #d7b8f32b;
+  color: #b7a1cc;
+}
+.space-app .hero p {
+  color: #c5bedf;
+}
+.space-app .mode {
+  background: #ad8bdf20;
+  border-color: #c8aeff50;
+  color: #c9d9ff;
+}
+.space-app .filters {
+  background: linear-gradient(135deg, #ac8feb28, #90d0f718);
+  border-color: #d6c1ff45;
+}
+.space-app label {
+  color: #c7badf;
+}
+.space-app input,
+.space-app select {
+  background: #2b24496b;
+  border-color: #bda5e34a;
+  color: #f2ebff;
+}
+.space-app select option {
+  background: #332a56;
+}
+.space-app .resultbar {
+  color: #c5b6db;
+}
+.space-app .detail {
+  background: linear-gradient(130deg, #c2a6fa24, #83bce51f, #e6a6c71c);
+  border-color: #d4bdff50;
+}
+.space-app .portrait {
+  border-color: #b9e7ff66;
+  box-shadow: 0 15px 55px #1c1a414f;
+}
+.space-app .fact {
+  border-color: #d4bbfa2f;
+}
+.space-app .fact dt {
+  color: #bcb2d9;
+}
+.space-app .fact dd {
+  color: #e4ddf2;
+}
+.space-app .fact a {
+  color: #99def5;
+}
+.space-app .episodes a {
+  background: #b796ee1d;
+  border-color: #c5abef40;
+  color: #ddd0f1;
+}
+.space-app .episodes a:nth-child(3n + 2) {
+  background: #7ac5e418;
+  color: #b9eaff;
+}
+.space-app .episodes a:nth-child(3n + 3) {
+  background: #d9a0c51c;
+  color: #f3d2e8;
+}
+.space-app .episodes a:hover {
+  background: #bfa4ff40;
+}
+.space-app .back,
+.space-app .note {
+  color: #bfb2da;
+}
+.space-app .empty {
+  background: #a088cf18;
+  border-color: #c8aff24a;
+  color: #c9bcdf;
+}
+.space-app .empty h3 {
+  color: #f0e7fa;
+}
+.space-app .pager {
+  color: #cebee5;
+}
+@media (max-width: 600px) {
+  .space-links {
+    background: linear-gradient(140deg, #3b2d60f5, #263f68f5);
+    border-color: #cbb4ff66;
+  }
+  .space-links .nav-search {
+    background: #c8a4ff1a;
+  }
+  .space-app {
+    background:
+      radial-gradient(ellipse at 100% 8%, #955ae470, transparent 40%),
+      radial-gradient(ellipse at 0% 32%, #177ca777, transparent 40%),
+      linear-gradient(165deg, #2c1c48, #193151 48%, #482a5d);
+  }
+}
